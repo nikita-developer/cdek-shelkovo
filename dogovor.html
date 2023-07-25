@@ -12,12 +12,20 @@
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <a class="logo header__logo"><img src="./media/logo/logo.svg" alt=""></a>
+                    <a class="logo header__logo" href="/"><img src="./media/logo/logo.svg" alt=""></a>
                     <nav class="nav header__nav">
-                        <a class="nav__link active" href="/">Главная</a>
-                        <a class="nav__link" href="/about.html">О нас</a>
-                        <a class="nav__link" href="/contact.html">Контакты</a>
-                        <a class="nav__link" href="/dogovor.html">Договора</a>
+                        <div class="nav__burger js-nav__burger">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="nav__body">
+                            <div class="nav__burger-close js-nav__burger-close">
+                                <span></span><span></span>
+                            </div>
+                            <a class="nav__link active" href="/">Главная</a>
+                            <a class="nav__link" href="/about.html">О нас</a>
+                            <a class="nav__link" href="/contact.html">Контакты</a>
+                            <a class="nav__link" href="/dogovor.html">Договора</a>
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -38,6 +46,181 @@
                     <div class="info__item">
                         <h5>Физические лица</h5>
                         <p>Порадуйте любимых людей подарком, который доставит им курьер в назначенный день, или отправьте домой сувениры, которые вы купили в отпуске, но не смогли уместить в чемоданы. Отслеживайте статус отправления в приложении СДЭК или на сайте нашей службы.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="dogovor">
+                    <h2 class="section__title">Заключить договор</h2>
+                    <div class="dogovor__main">
+                        <div class="dogovor__head">
+                            <div class="dogovor__tab">Самозанятый</div>
+                            <div class="dogovor__tab">ИП</div>
+                            <div class="dogovor__tab">ООО</div>
+                        </div>
+                        <div class="dogovor__body">
+                            <form class="dogovor__form">
+                                <label class="dogovor__label">
+                                    <p>Инн</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Фио</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Дата рождения</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Телефон</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Почта</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Серия и номер паспорта</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Дата выдачи паспорта</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Кем выдан паспорт</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Адрес регистрации</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Сайт или группа в соцсетях</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <button type="submit">Отправить</button>
+                            </form>
+                            <form class="dogovor__form">
+                                <label class="dogovor__label">
+                                    <p>Инн</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Фио</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Юридический адрес</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Фактический адрес</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Бик банка</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Расчётный счёт</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Корреспондентский счет</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>ФИО директора</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Основания действий директора</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Телефон</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Почта</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Сайт или группа в соцсетях</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <button type="submit">Отправить</button>
+                            </form>
+                            <form class="dogovor__form">
+                                <label class="dogovor__label">
+                                    <p>Наименование</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Инн</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Юридический адрес</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Фактический адрес</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Номер свидетельства (обязательно)</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Номер свидетельства</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Дата выдачи свидетельства</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Бик банка</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Расчётный счёт</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Корреспондентский счет</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>ФИО заполнителя анкеты</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>ФИО директора</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Основания действий директора</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Телефон</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Почта</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <label class="dogovor__label">
+                                    <p>Сайт или группа в соцсетях</p>
+                                    <input class="dogovor__field" type="text">
+                                </label>
+                                <button type="submit">Отправить</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
