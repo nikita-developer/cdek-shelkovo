@@ -433,3 +433,99 @@ body.hidden {
 		width: 100%;
 	}
 }
+
+.dogovor__head {
+	display: flex;
+	border-bottom: 1px solid #fff;
+}
+
+.dogovor__tab {
+	width: 33.333%;
+	background-color: #ececec;
+	text-align: center;
+	padding: 15px;
+	font-weight: 700;
+}
+
+.dogovor__tab.active {
+	background-color: #00a942;
+	color: #fff;
+}
+
+.dogovor__tab:first-child {
+	border-top-left-radius: 15px;
+}
+
+.dogovor__tab:nth-child(2) {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+
+.dogovor__tab:last-child {
+	border-top-right-radius: 15px;
+}
+
+.dogovor__body {
+	background-color: #ececec;
+	padding: 25px;
+}
+
+.dogovor__form {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.dogovor__label {
+	width: 33.333%;
+	padding: 10px;
+}
+
+.dogovor__label p {
+	font-size: 14px;
+	margin-bottom: 5px;
+	color: #535353;
+}
+
+.dogovor__field {
+	background-color: #fff;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.dogovor__submit {
+	width: 100%;
+	padding: 10px;
+}
+
+.dogovor__btn {
+	display: inline-block;
+	padding: 10px 45px;
+	border-radius: 5px;
+	background-color: #4196ec;
+	color: #fff;
+	width: 100%;
+}
+
+@media (max-width: 768px) {
+	.dogovor__label {
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.dogovor__label {
+		width: 100%;
+	}
+
+	.dogovor__body {
+		padding: 10px;
+	}
+
+	.dogovor__tab {
+		font-size: 14px;
+		font-weight: 400;
+		width: auto;
+		flex-grow: 1;
+	}
+}
