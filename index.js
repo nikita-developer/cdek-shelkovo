@@ -13,4 +13,9 @@ $(document).ready(function() {
         $('.nav__body').removeClass('open')
         $('body').removeClass('hidden')
     })
+    
+    $('.dogovor__tab').click(function() {
+        $('.dogovor__tab').not($(this).addClass('active')).removeClass('active')
+        $('.dogovor__form').not($('.dogovor__form').eq($(this).index()).addClass('active')).removeClass('active')
+    })
 });

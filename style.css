@@ -441,10 +441,16 @@ body.hidden {
 
 .dogovor__tab {
 	width: 33.333%;
-	background-color: #ececec;
 	text-align: center;
 	padding: 15px;
 	font-weight: 700;
+	background-color: #f7f7f7;
+	cursor: pointer;
+	opacity: .9;
+}
+
+.dogovor__tab:hover {
+	opacity: 1;
 }
 
 .dogovor__tab.active {
@@ -452,36 +458,24 @@ body.hidden {
 	color: #fff;
 }
 
-.dogovor__tab:first-child {
-	border-top-left-radius: 15px;
-}
-
-.dogovor__tab:nth-child(2) {
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-}
-
-.dogovor__tab:last-child {
-	border-top-right-radius: 15px;
-}
-
-.dogovor__body {
-	background-color: #ececec;
-	padding: 25px;
-}
-
 .dogovor__form {
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
+	gap: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.dogovor__form.active {
+	display: flex;
 }
 
 .dogovor__label {
-	width: 33.333%;
-	padding: 10px;
+	width: calc(33.333% - 20px);
 }
 
 .dogovor__label p {
-	font-size: 14px;
+	font-size: 15px;
 	margin-bottom: 5px;
 	color: #535353;
 }
@@ -491,35 +485,41 @@ body.hidden {
 	width: 100%;
 	padding: 10px;
 	border-radius: 5px;
+	border: 1px solid #cacaca;
+	transition: .3s border-color;
+}
+
+.dogovor__field:hover {
+	border-color: #00a942;
+}
+
+.dogovor__field:focus {
+	border-color: #00a942;
 }
 
 .dogovor__submit {
 	width: 100%;
-	padding: 10px;
+	text-align: center;
 }
 
 .dogovor__btn {
 	display: inline-block;
-	padding: 10px 45px;
-	border-radius: 5px;
-	background-color: #4196ec;
+	padding: 20px 45px;
+	width: 280px;
+	border-radius: 0;
+	background-color: #000;
 	color: #fff;
-	width: 100%;
 }
 
 @media (max-width: 768px) {
 	.dogovor__label {
-		width: 50%;
+		width: calc(50% - 15px);
 	}
 }
 
 @media (max-width: 480px) {
 	.dogovor__label {
 		width: 100%;
-	}
-
-	.dogovor__body {
-		padding: 10px;
 	}
 
 	.dogovor__tab {
