@@ -253,10 +253,6 @@ body.hidden {
 	font-size: 14px;
 }
 
-.nav__link:last-child {
-	padding-right: 0;
-}
-
 .nav__link:hover {
 	color: #000;
 }
