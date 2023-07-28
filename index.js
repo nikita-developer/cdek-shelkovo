@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
+    $('.face-slider').owlCarousel({
         items: 1,
         loop: true
     })
@@ -17,5 +17,23 @@ $(document).ready(function() {
     $('.dogovor__tab').click(function() {
         $('.dogovor__tab').not($(this).addClass('active')).removeClass('active')
         $('.dogovor__form').not($('.dogovor__form').eq($(this).index()).addClass('active')).removeClass('active')
+    })
+
+    $('.contacts-slider').owlCarousel({
+        loop: true,
+        dots: false,
+        margin: 15,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1,
+            },
+            768: {
+                items: 2,
+            },
+            1280: {
+                items: 3,
+            }
+        }
     })
 });
