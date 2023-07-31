@@ -594,7 +594,7 @@ body.hidden {
 
 .contacts__box {
 	flex-shrink: 0;
-	width: calc(50% - 15px);
+	width: calc(50% - 30px);
 }
 
 .contacts__iframe {
