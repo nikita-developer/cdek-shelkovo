@@ -361,6 +361,7 @@ body.hidden {
 }
 
 .face-slider__item {
+	display: block;
 	position: relative;
 	height: 600px;
 	background-color: gray;
@@ -583,7 +584,16 @@ body.hidden {
 }
 
 .contacts__description {
+	margin-bottom: 10px;
+}
+
+.contacts__time {
 	margin-bottom: 30px;
+}
+
+.contacts__time span {
+	display: block;
+	margin-top: 5px;
 }
 
 .contacts__body {
@@ -710,5 +720,84 @@ body.hidden {
 	.contacts-slider .owl-nav button {
 		margin-right: 10px;
 		margin-left: 10px;
+	}
+}
+
+.cdek-id__title {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.cdek-id__subtitle {
+	font-weight: 700;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+.cdek-id__list {
+	display: flex;
+	column-gap: 30px;
+	margin-bottom: 30px;
+	flex-wrap: wrap;
+}
+
+.cdek-id__item {
+	background-image: url('./media/cdek-id/check.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 50px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.cdek-id__description {
+	font-size: 20px;
+	max-width: 600px;
+	margin-bottom: 15px;
+	color: #515151;
+}
+
+.cdek-id__ul {
+	margin-bottom: 60px;
+}
+
+.cdek-id__li {
+	font-size: 18px;
+	color: #000;
+	margin-bottom: 5px;
+}
+
+.cdek-id__li span {
+	color: #00a942;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.cdek-id__video {
+	position: relative;
+	min-height: 600px;
+}
+
+.cdek-id__video iframe {
+	position: absolute;
+}
+
+@media(max-width: 1280px) {
+	.cdek-id__video {
+		min-height: 400px;
+		max-width: 640px;
+	}
+}
+
+@media(max-width: 480px) {
+	.cdek-id__video {
+		min-height: 250px;
+	}
+
+	.cdek-id__ul {
+		margin-bottom: 30px;
 	}
 }

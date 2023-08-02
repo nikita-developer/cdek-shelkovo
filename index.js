@@ -1,7 +1,10 @@
 $(document).ready(function() {
     $('.face-slider').owlCarousel({
         items: 1,
-        loop: true
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true
     })
 
     $('.js-nav__burger').click(function() {
