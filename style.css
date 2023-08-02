@@ -153,6 +153,16 @@ body.hidden {
 	overflow: hidden;
 }
 
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main > .container {
+	flex-grow: 1;
+}
+
 .btn {
 	display: inline-block;
 	padding: 10px 30px;
