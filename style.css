@@ -196,6 +196,10 @@ main > .container {
 	color: #00a942;
 }
 
+.section__title--error {
+	color: #f1403c;
+}
+
 .section__subtitle {
 	font-size: 22px;
 	font-weight: 400;
@@ -229,6 +233,11 @@ main > .container {
 	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
@@ -809,5 +818,56 @@ main > .container {
 
 	.cdek-id__ul {
 		margin-bottom: 30px;
+	}
+}
+
+.form-messages {
+	flex-grow: 1;
+	display: flex;
+}
+
+.form-messages__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.form-messages__info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-messages__image {
+	width: 100px;
+	height: 100px;
+	margin-right: 15px;
+	flex-shrink: 0;
+}
+
+.form-messages__title {
+	margin-bottom: 0;
+}
+
+.form-messages__btn {
+	display: inline-block;
+    padding: 20px 45px;
+    width: 280px;
+    border-radius: 0;
+    background-color: #000;
+    color: #fff;
+	margin-top: 40px;
+	text-align: center;
+}
+
+@media (max-width: 480px) {
+	.form-messages__title {
+		font-size: 24px;
+	}
+
+	.form-messages__image {
+		width: 80px;
 	}
 }
